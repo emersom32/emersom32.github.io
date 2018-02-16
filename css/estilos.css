@@ -5,14 +5,15 @@
 	padding: 0;
 }
 
+/*Aqui é formatado os textos da pagina.*/
 body {
 	font-size: 16px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #f3f3f3;
+	background: #f3f3f3; /*fundo cinza da pagina*/
 }
 
 #navegacao {
-	background: #fff;
+	background: grey;
 	border-bottom: 1px solid #d8d8d8; 
 	border-bottom: 1px solid #d8d8d8;
 	height: 45px;
@@ -21,27 +22,43 @@ body {
 	top: 0;
 }
 
+
 #area {
 	width:720px;
 	margin: 0 auto;
+	
 }
 
 #area-principal {
 	width:920px;
 	margin: 55px auto 10px auto;
+	
 
 }
 
+.icone{
+
+	float: right;
+	width: 40px;
+	height: 20px;
+	
+}
+
+/*Aqui configura o logo a esquerda*/
 #logo {
 	float: left;
 }
+
+/*Aqui configura o menu a direita*/
 #menu{
 	float: right;
-	padding: 10px;
+	padding: 10px;/*alinha o menu no meio*/
+	background: ##b9c941;
+
 }
 
 #postagem {
-	background: #fff;
+	background: #ffffff;
 	padding:  10px;
 	margin-bottom: 10px;
 
@@ -49,6 +66,12 @@ body {
 
 h2{
 	color: #b9c941;
+	text-align: center;
+}
+
+h3 {
+
+	text-align: center;
 }
 
 p {
@@ -56,9 +79,21 @@ p {
   margin-top: 0 
 }
 
+/*Aqui eu configurei a minha lista não ordenada*/
 .list {
 		text-indent: 30px;
             margin: 30px;
+}
+
+
+
+table {
+
+	 margin:auto; /* alinha a tabela ao centro.*/
+}
+
+td{
+	 color:blue;
 }
 /****************************************
  **********Formatação do menu ***********/
@@ -69,29 +104,32 @@ p {
  }
 
  /*Links não visitados*/
- a:link {
- 		color:#838383;
+ .link:link {
+ 		color:orange;
  }
 
  /*Links Visitados*/
 
- a:visited{
- 	color: #838383;
+ .link:visited{
+ 	color: orange;
  }
 
 /* links hover, ao passsar o mouse muda a cor.*/
- a:hover {
+ .link:hover {
  	color:#fff;
  	background:#b9c941;
  }
 
 /* Links ativos*/
- a:active {
+ .link:active {
  	color: #535353;
  }
 
 .verde {
 	color: orange;
+}
+.cor{
+	color: #b9c941;
 }
 
 .data-postagem{
