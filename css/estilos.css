@@ -15,7 +15,6 @@ body {
 #navegacao {
 	background: grey;
 	border-bottom: 1px solid #d8d8d8; 
-	border-bottom: 1px solid #d8d8d8;
 	height: 45px;
 	position: fixed;
 	width: 100%;
@@ -24,14 +23,16 @@ body {
 
 
 #area {
-	width:720px;
+	width:920px;
 	margin: 0 auto;
 	
 }
 
 #area-principal {
-	width:920px;
+	width: 920px;
 	margin: 55px auto 10px auto;
+	margin-top: 10px;
+
 	
 
 }
@@ -42,26 +43,38 @@ body {
 	width: 40px;
 	height: 20px;
 	
+	
+	
 }
 
 /*Aqui configura o logo a esquerda*/
 #logo {
 	float: left;
+	text-shadow: 1px 1px 1px white;
+}
+.logotipo{
+	float:left;
+	width: 35px;
+	height: 25px;
+	padding: 8px;
+
+
 }
 
 /*Aqui configura o menu a direita*/
 #menu{
 	float: right;
-	padding: 10px;/*alinha o menu no meio*/
+	margin: 10px 0px;/*alinha o menu no meio*/
 	background: ##b9c941;
+	
+
 
 }
 
 #postagem {
 	background: #ffffff;
-	padding:  10px;
+	padding: 10px;
 	margin-bottom: 10px;
-
 }
 
 h2{
@@ -74,10 +87,7 @@ h3 {
 	text-align: center;
 }
 
-p {
-	text-indent: 30px;
-  margin-top: 0 
-}
+
 
 /*Aqui eu configurei a minha lista não ordenada*/
 .list {
@@ -101,6 +111,13 @@ td{
  a {
  	text-decoration: none;
  	padding: 5px 10px;
+
+
+ }
+
+ p:focus{
+ 	background:#eee;
+ 	outline: 1px solid #ccc;
  }
 
  /*Links não visitados*/
@@ -118,6 +135,14 @@ td{
  .link:hover {
  	color:#fff;
  	background:#b9c941;
+ 	}
+
+ 	/*Navegação via teclado*/
+ .link:focus{
+ 	color:#C00;
+ 	background:#fff;
+ 	outline: 5px solid #C00;
+
  }
 
 /* Links ativos*/
@@ -146,7 +171,7 @@ td{
 }
 
 .postado{
-	border-left: solid #d8d8d8;
+	border-left: 5px solid #d8d8d8;
 	padding-left: 5px;
 	display: block;
 	margin-top: 10px;
